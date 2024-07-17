@@ -1,7 +1,6 @@
+# -*- coding: utf-8 -*-
 import os
 import sys
-
-
 
 
 def validate_params(args):
@@ -30,7 +29,7 @@ def open_files(args):
         new_file = same_path + "/new_" + same_file
     else:
         new_file = same_path + "\\new_" + same_file
-    print(f"Se creara el archivo: {new_file}")
+    print("Se creara el archivo: " + new_file)
 
     f = open(args[1], "r")
     nf = open(new_file, "w")
